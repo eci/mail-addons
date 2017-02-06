@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from openerp.http import request
-import openerp
+from odoo.http import request
+import odoo
+from odoo.addons.bus.controllers.main import BusController
 
-
-class MailChatController(openerp.addons.bus.controllers.main.BusController):
+class MailChatController(BusController):
     # -----------------------------
     # Extends BUS Controller Poll
     # -----------------------------
